@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Clicker JS</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="game">
+    <section class="left-panel">
+      <h1>🍪 Cookie Clicker JS</h1>
+      <p class="subtitle">Click the cookie, buy upgrades, and watch cookies pile up.</p>
+
+      <button id="cookie-button" class="cookie" aria-label="Click cookie">
+        🍪
+      </button>
+
+      <div class="stats">
+        <p><strong>Cookies:</strong> <span id="cookies">0</span></p>
+        <p><strong>Per click:</strong> <span id="per-click">1</span></p>
+        <p><strong>Per second:</strong> <span id="per-second">0</span></p>
+      </div>
+    </section>
+
+    <section class="right-panel">
+      <h2>Upgrades</h2>
+      <div class="upgrade-card">
+        <h3>+1 Cookie Per Click</h3>
+        <p>Owned: <span id="click-upgrades-owned">0</span></p>
+        <p>Cost: <span id="click-upgrade-cost">15</span></p>
+        <button id="buy-click-upgrade">Buy Click Upgrade</button>
+      </div>
+
+      <div class="upgrade-card">
+        <h3>Auto Clicker (+1/sec)</h3>
+        <p>Owned: <span id="auto-clickers-owned">0</span></p>
+        <p>Cost: <span id="auto-clicker-cost">50</span></p>
+        <button id="buy-auto-clicker">Buy Auto Clicker</button>
+      </div>
+
+      <div class="upgrade-card">
+        <h3>Cookie Factory (+10/sec)</h3>
+        <p>Owned: <span id="factories-owned">0</span></p>
+        <p>Cost: <span id="factory-cost">400</span></p>
+        <button id="buy-factory">Buy Factory</button>
+      </div>
+
+      <button id="reset-game" class="reset">Reset Game</button>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
